@@ -1,0 +1,6 @@
+{
+    "_comment": "Configuration pour Nodemon en TypeScript. watch[] permet de surveiller un dossier à chaque fois qu'il change, src ici. ext précise l'extension des fichiers à surveiller. exec permet d'exécuter une commande, celle-ci est exécutée si un changement est détecté: ts-node permet d'exécuter directement du TypeScript sans le compiler, -r dotenv/config permet de charger automatiquement les variables d'environnements depuis le fichier .env et src/index.ts est le fichier d'entrée principal du projet.",
+    "watch": ["src"],
+    "ext": "ts",
+    "exec": "ts-node -r dotenv/config src/index.ts"
+}
