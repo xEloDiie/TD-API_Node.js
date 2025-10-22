@@ -24,6 +24,29 @@ L’API a pu **gérer des utilisateurs** (au départ dans un fichier .json) puis
 
 ---
 
+## Structure du projet
+
+```
+api-node-ts/
+├── node_modules/ # Dossier d'installation des modules Node.js
+├── .env # Variables d'environnement
+├── nodemon.json # Configuration Nodemon
+├── package.json
+├── tsconfig.json # Configuration TypeScript
+└── src/
+     ├── config/
+     │     └── database.ts # Configuration Sequelize / SQLite
+     ├── controllers/
+     │     └── user.controller.ts # Logique métier utilisateurs
+     ├── models/
+     │     └── user.model.ts # Modèle utilisateur Sequelize
+     ├── routes/
+     │     └── user.routes.ts # Définition des routes utilisateurs
+     └── index.ts # Point d’entrée de l’application
+```
+
+---
+
 ## Remarque
 
 Les commentaires demandés pour les fichiers ```nodemon.json``` et ```package.json``` se situent dans la balise "```_comment```" des fichiers respectifs.
