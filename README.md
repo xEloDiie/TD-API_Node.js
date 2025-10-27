@@ -96,12 +96,16 @@ Le serveur sera ainsi accessible en local à l'adresse suivante : http://localho
 GET http://localhost:4000/
 ```
 
+![Desktop 2025 10 27 - 13 44 05 03-00 00 03 130-00 00 14 889](https://github.com/user-attachments/assets/5b1087d6-e9c4-4de9-a214-bd69c386427e)
+
 ##### - Depuis l'invite de commande :
 
 1. Exécuter
 ```bash
-curl http://localhost:4000
+curl http://localhost:4000/
 ```
+
+<img width="1128" height="450" alt="image" src="https://github.com/user-attachments/assets/f318ece5-ec16-4335-ae09-bc5f404653c8" />
 
 ---
 
@@ -119,17 +123,21 @@ curl http://localhost:4000
 
 2. Exécuter
 ```bash
-POST http://localhost:4000/users
+POST http://localhost:4000/users/
 ```
+
+![Desktop 2025 10 27 - 14 42 57 07](https://github.com/user-attachments/assets/2ac53971-f9fe-4214-bb98-99ef503dce84)
+
 
 ##### - Depuis l'invite de commande :
 
 1. Exécuter :
 ```bash
-curl -X POST http://localhost:4000/users
--H "Content-Type: application/json"
--d "{\"name\":\"<NOM_A_AJOUTER>\",\"email\":\"<EMAIL_A_AJOUTER>\"}"
+curl -X POST http://localhost:4000/users/ -H "Content-Type: application/json" -d "{\"name\":\"Alice Dupont\",\"email\":\"alice.dupont@example.com\"}"
 ```
+
+<img width="1117" height="80" alt="image" src="https://github.com/user-attachments/assets/03a50551-3199-4764-971f-d586f5855d4b" />
+
 
 ---
 
@@ -139,14 +147,14 @@ curl -X POST http://localhost:4000/users
 
 1. Exécuter :
 ```bash
-GET http://localhost:4000/users
+GET http://localhost:4000/users/
 ```
 
 ##### - Depuis l'invite de commande :
 
 1. Exécuter :
 ```bash
-curl http://localhost:4000/users
+curl http://localhost:4000/users/
 ```
 
 ---
