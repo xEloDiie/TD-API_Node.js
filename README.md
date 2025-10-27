@@ -128,7 +128,6 @@ POST http://localhost:4000/users/
 
 ![Desktop 2025 10 27 - 14 42 57 07](https://github.com/user-attachments/assets/2ac53971-f9fe-4214-bb98-99ef503dce84)
 
-
 ##### - Depuis l'invite de commande :
 
 1. Exécuter :
@@ -137,7 +136,6 @@ curl -X POST http://localhost:4000/users/ -H "Content-Type: application/json" -d
 ```
 
 <img width="1117" height="80" alt="image" src="https://github.com/user-attachments/assets/03a50551-3199-4764-971f-d586f5855d4b" />
-
 
 ---
 
@@ -149,6 +147,8 @@ curl -X POST http://localhost:4000/users/ -H "Content-Type: application/json" -d
 ```bash
 GET http://localhost:4000/users/
 ```
+
+![Desktop 2025 10 27 - 16 05 14 09-00 00 00 000-00 00 04 384](https://github.com/user-attachments/assets/0d75f250-12f0-4ba4-9802-419e9a5be3f0)
 
 ##### - Depuis l'invite de commande :
 
