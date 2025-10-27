@@ -86,17 +86,30 @@ npm run dev
 Le serveur sera ainsi accessible en local à l'adresse suivante : http://localhost:4000
 
 ### 3. Exécuter des requêtes dans Postman ou dans une invite de commande pour tester la base de données :
-   
+
+#### Pour vérifier si l'API fonctionne :
+
+##### - Avec Postman :
+
+1. Exécuter
+```bash
+GET http://localhost:4000/
+```
+
+##### - Depuis l'invite de commande :
+
+1. Exécuter
+```bash
+curl http://localhost:4000
+```
+
+---
+
 #### Pour ajouter un utilisateur :
 
 ##### - Avec Postman :
   
-1. Exécuter
-```bash
-POST http://localhost:4000/users
-```
-
-2. Se rendre dans "Body" puis "raw" et choisir comme language JSON et écrire :
+1. Se rendre dans "Body" puis "raw" et choisir comme language JSON et ajouter :
 ```JSON
 {
      "name": "<NOM_A_AJOUTER>",
@@ -104,7 +117,10 @@ POST http://localhost:4000/users
 }
 ```
 
-3. Enfin, appuyer sur "Send" pour envoyer la requête
+2. Exécuter
+```bash
+POST http://localhost:4000/users
+```
 
 ##### - Depuis l'invite de commande :
 
@@ -112,12 +128,12 @@ POST http://localhost:4000/users
 ```bash
 curl -X POST http://localhost:4000/users
 -H "Content-Type: application/json"
--d "{\"name\":\"<NOM_A_MODIF>\",\"email\":\"<EMAIL_A_MODIF>\"}"
+-d "{\"name\":\"<NOM_A_AJOUTER>\",\"email\":\"<EMAIL_A_AJOUTER>\"}"
 ```
 
 ---
 
-#### Pour les afficher :
+#### Pour afficher les utilisateurs :
 
 ##### - Avec Postman :
 
