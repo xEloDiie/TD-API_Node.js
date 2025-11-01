@@ -227,6 +227,6 @@ curl -X DELETE http://localhost:4000/users/<ID_UTILISATEUR>
 
 <img width="1288" height="61" alt="image" src="https://github.com/user-attachments/assets/7868668d-4ddb-4e75-a739-f9c6f74abb63" />
 
-#### - Après supression de tous les utilisateurs :
+##### - Après supression de tous les utilisateurs :
 
 <img width="1192" height="41" alt="image" src="https://github.com/user-attachments/assets/e8fd6827-ae32-4637-b8d1-9caf7119ea34" />
