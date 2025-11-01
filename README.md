@@ -132,7 +132,7 @@ POST http://localhost:4000/users/
 
 1. Exécuter :
 ```bash
-curl -X POST http://localhost:4000/users/ -H "Content-Type: application/json" -d "{\"name\":\"Alice Dupont\",\"email\":\"alice.dupont@example.com\"}"
+curl -X POST http://localhost:4000/users/ -H "Content-Type: application/json" -d "{\"name\":\"<NOM_A_AJOUTER>\",\"email\":\"<EMAIL_A_AJOUTER>\"}"
 ```
 
 <img width="1117" height="80" alt="image" src="https://github.com/user-attachments/assets/03a50551-3199-4764-971f-d586f5855d4b" />
@@ -157,6 +157,8 @@ GET http://localhost:4000/users/
 curl http://localhost:4000/users/
 ```
 
+<img width="1193" height="82" alt="image" src="https://github.com/user-attachments/assets/4954b17f-0799-4792-932c-2f25ee791a2a" />
+
 ---
 
 #### Pour l'afficher à l'aide d'un ID particulier : 
@@ -168,12 +170,16 @@ curl http://localhost:4000/users/
 GET http://localhost:4000/users/<ID_UTILISATEUR>
 ```
 
+![Desktop 2025 11 01 - 15 05 06 03](https://github.com/user-attachments/assets/c93fb528-1a02-43ed-a395-466cfad68a62)
+
 ##### - Depuis l'invite de commande :
 
 1. Exécuter :
 ```bash
 curl http://localhost:4000/users/<ID_UTILISATEUR>
 ```
+
+<img width="1286" height="41" alt="image" src="https://github.com/user-attachments/assets/622f7850-0a8c-4194-bd2c-f3380f6f85f6" />
 
 ---
 
@@ -188,14 +194,16 @@ curl http://localhost:4000/users/<ID_UTILISATEUR>
 PUT http://localhost:4000/users/<ID_UTILISATEUR>
 ```
 
+![Desktop 2025 11 01 - 15 46 17 06](https://github.com/user-attachments/assets/790857c3-cc13-41e3-815d-d5a8d74d94cf)
+
 ##### - Depuis l'invite de commande :
 
 1. Exécuter : 
 ```bash
-curl -X PUT http://localhost:4000/users/<ID_UTILISATEUR>\
--H "Content-Type: application/json" \
--d "{\"name\":\"<NOM_A_MODIF>\",\"email\":\"<EMAIL_A_MODIF>\"}"
+curl -X PUT http://localhost:4000/users/<ID_UTILISATEUR> -H "Content-Type: application/json" -d "{\"name\":\"<NOM_A_MODIF>\",\"email\":\"<EMAIL_A_MODIF>\"}"
 ```
+
+<img width="1264" height="82" alt="image" src="https://github.com/user-attachments/assets/9efa5f1e-c8f9-4e85-b714-31808d57cde9" />
 
 ---
 
@@ -208,9 +216,17 @@ curl -X PUT http://localhost:4000/users/<ID_UTILISATEUR>\
 DELETE http://localhost:4000/users/<ID_UTILISATEUR>
 ```
 
+![Desktop 2025 11 01 - 15 56 08 07](https://github.com/user-attachments/assets/87f90e40-13f8-426f-b196-deba93083cf9)
+
 ##### - Depuis l'invite de commande : 
 
 1. Exécuter :
 ```
 curl -X DELETE http://localhost:4000/users/<ID_UTILISATEUR>
 ```
+
+<img width="1288" height="61" alt="image" src="https://github.com/user-attachments/assets/7868668d-4ddb-4e75-a739-f9c6f74abb63" />
+
+#### - Après supression de tous les utilisateurs :
+
+<img width="1192" height="41" alt="image" src="https://github.com/user-attachments/assets/e8fd6827-ae32-4637-b8d1-9caf7119ea34" />
